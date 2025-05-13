@@ -1,0 +1,496 @@
+/* General Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    background-color: #f4f7fc;
+    color: #333;
+}
+
+.header {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #1a1a1a;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    margin-top: 0px; /* Moves it down */
+    margin-bottom: 10px; /* Adds some space below */
+    padding-top: 10px; /* Prevents it from sticking to the top */
+}
+
+.sub-text {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #4a4a4a;
+    font-family: 'Lora', serif;
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Highlighting key words */
+.sub-text strong {
+    color: #0056b3; /* Blue highlight */
+    font-weight: 600;
+}
+
+/* Subtle text shadow for emphasis */
+.sub-text-gradient {
+    color: #007bff; /* Fallback color */
+    font-weight: 700;
+    text-shadow: 1px 1px 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Adjust spacing for mobile */
+@media (max-width: 768px) {
+    .sub-text {
+        font-size: 18px;
+        max-width: 90%;
+        line-height: 1.4;
+    }
+}
+.container {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+      margin-top: 15px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+/* Heading Styles */
+h2 {
+    color: #0056b3;
+    font-weight: 700;
+}
+
+/* Evaluation Results Title */
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif; /* Modern, clean font */
+    color: #1a1a1a; /* Dark color for contrast */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Resume Score & Feedback Labels */
+p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif; /* Professional, readable font */
+    color: #4a4a4a; /* Slightly softer black */
+    margin-bottom: 5px;
+}
+
+
+/* Job Titles Section */
+.job-titles-section {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Poppins', 'Helvetica Neue', sans-serif; /* Modern and friendly */
+}
+
+/* Title Styling */
+.job-titles-section h3 {
+    color: #0056b3; /* Dark gray for a softer look */
+    font-weight: 600; /* Slightly bold but not too heavy */
+    margin-bottom: 12px;
+    font-size: 18px; /* Larger for elegance */
+    text-transform: none; /* No uppercase, more natural */
+    letter-spacing: 0.3px; /* Softer spacing */
+}
+
+/* Input Field */
+.job-titles-section input {
+    width: 75%;
+    padding: 14px;
+    font-size: 16px;
+    font-family: 'Poppins', 'Arial', sans-serif; /* A more inviting font */
+    border: 1.5px solid #d1d1d1; /* Softer border */
+    border-radius: 6px;
+    background-color: #fff;
+    margin-bottom: 12px;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+}
+
+/* Input Focus Effect */
+.job-titles-section input:focus {
+    border-color: #007bff; /* A soft blue for better readability */
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); /* Gentle glow */
+}
+
+/* Placeholder Styling */
+.job-titles-section input::placeholder {
+    color: #7a7a7a; /* Lighter gray for better readability */
+    font-style: italic; /* More human touch */
+}
+
+
+/* File Upload Section */
+input[type="file"] {
+    display: block;
+    margin: 15px auto;
+    padding: 12px;
+    border: 2px solid #0056b3;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="file"]:hover {
+    border-color: #003d80;
+}
+
+/* Buttons */
+button {
+    padding: 14px 22px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #0056b3, #003d80);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative; /* Ensure the button is positioned properly */
+}
+
+/* Hover effect for button */
+button:hover {
+    background: linear-gradient(135deg, #004494, #002b66);
+    transform: scale(1.05); /* Slightly grow the button */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Shadow to give pop-out effect */
+}
+
+/* Remove the hover effect when not hovered */
+button:active {
+    transform: scale(1); /* Revert the size when clicked */
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1); /* A little smaller shadow on click */
+}
+
+/* Status Message */
+#status {
+    font-size: 15px;
+    color: #444;
+    margin-top: 10px;
+}
+
+/* AI Feedback Section */
+#aiFeedback {
+    border: 1px solid #ddd;
+    padding: 15px;  /* Reduce padding to avoid too much space */
+    min-height: 80px;
+    background-color: #f9f9f9;
+    text-align: left;
+    white-space: pre-wrap;  /* Ensure long text wraps properly */
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6; /* Improved line spacing */
+    margin-bottom: 40px;
+}
+
+#aiFeedback p {
+    font-size: 14px;
+    color: #444;
+    margin: 5px 0;  /* Remove extra margin */
+}
+
+#aiFeedback strong {
+    font-weight: bold;
+    color: #0056b3; /* Color for bold text */
+}
+
+/* Resume Score */
+#aiScore {
+    font-size: 20px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Footer */
+.footer {
+    font-size: 14px;
+    color: #666;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Loading Spinner */
+.spinner {
+    display: none;
+    border: 6px solid #f3f3f3; /* Increased border width for larger spinner */
+    border-top: 6px solid #3498db; /* Larger border-top for better visibility */
+    border-radius: 50%;
+    width: 50px;  /* Increased width */
+    height: 50px; /* Increased height */
+    animation: spin 2s linear infinite;
+    margin-top: 20px;
+    margin: 20px auto;
+    position: relative; /* Ensure percentage can be positioned inside */
+}
+
+#percentageText {
+    display: none;
+    position: absolute; /* Position it inside the spinner */
+    top: 50%;   /* Vertically center */
+    left: 50%;  /* Horizontally center */
+    transform: translate(-50%, -50%); /* Adjust position */
+    font-size: 14px;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.small-text {
+    font-size: 12px;
+    color: #888;
+    margin-top: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#userCount {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background with slight transparency */
+    color: #333; /* Darker text for good contrast */
+    padding: 5px 10px; /* Reduced padding for a smaller, compact look */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Smaller text */
+    font-weight: bold; /* Emphasize text */
+    border: 1px solid #ddd; /* Light border for subtle separation */
+}
+
+/* Mobile-friendly adjustments */
+@media screen and (max-width: 600px) {
+    #userCount {
+        top: 5px; /* Adjust top position for smaller screens */
+        right: 5px; /* Adjust right position for smaller screens */
+        font-size: 10px; /* Smaller font size */
+        padding: 4px 8px; /* Even smaller padding */
+        width: auto; /* Ensure width adjusts based on content */
+    }
+}
+.footer-link {
+    color: #333; /* Default text color */
+    text-decoration: none; /* Remove underline */
+}
+.footer-link:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-box {
+    width: 350px;  /* Adjusted size */
+    height: 220px;
+    background: #ffffff;
+    border: 2px dashed #cbd5e1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #374151;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+    /* Hover effect */
+.upload-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.upload-box input {
+    display: none;
+}
+
+.upload-box img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.privacy {
+    margin-top: 10px;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #374151;
+}
+
+.file-name {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #1f2937;
+    font-weight: bold;
+}
+
+.upload-box {
+    width: 100%; /* Full width inside the container */
+    max-width: 400px; /* Prevents it from getting too wide */
+    height: auto;
+    padding: 15px;
+}
+
+.upload-btn {
+    width: 90%;
+    max-width: 400px; 
+    padding: 12px;
+    font-size: 16px;
+}
+@media (max-width: 480px) {
+    .upload-box,
+    .job-titles-section,
+    .upload-btn {
+        width: 90%;
+        max-width: 320px; /* Ensures good fit on small phones */
+    }
+
+    .job-titles-section input {
+        width: 95%; /* More width for better usability */
+        font-size: 14px;
+    }
+
+    .upload-box p {
+        font-size: 14px; /* Smaller text for better readability */
+    }
+}
+
+        /* Dragging Effect */
+.upload-box.drag-over {
+    border-color: #007bff;
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+.suggestion-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.suggestion-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #0056b3;
+}
+
+.btn-request {
+    background-color: white;
+    color: white;
+    border: 2px solid #0056b3;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: background 0.3s, color 0.3s;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.btn-request:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.suggestion-form {
+    display: none;
+    margin-top: 20px;
+}
+
+.input-field {
+    width: 90%;
+    padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            background: #f1f5f9;
+            color: #1e293b;
+            font-size: 14px;
+}
+        
+textarea.input-field {
+            height: 60px;
+            resize: none;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            background: #f1f5f9;
+            color: #1e293b;
+            font-size: 14px;
+}
+
+.btn-submit {
+            background-color: #10b981;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: background 0.3s;
+            border: 1px solid #047857;
+            font-weight: bold;
+}
+    
+.btn-submit:hover {
+            background-color: #047857;
+}
+
+.suggestion-description {
+        font-size: 14px;
+        color: #6b7280;
+        margin-bottom: 15px;
+}
+.mvp-note {
+    font-size: 0.9em;  /* Slightly smaller than the main text */
+    font-weight: bold; /* Bold text for emphasis */
+    margin-top: 8px;   /* Minimal spacing to tie it closely with the above content */
+    color: #555;       /* A neutral color that blends well with the page palette */
+  }
